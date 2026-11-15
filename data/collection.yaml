@@ -8,7 +8,11 @@
 # - 金額は税込の整数（円）。通貨記号は付けない
 # - 不明な項目は null（空欄）。「未確認」とは書かない
 # - id は既存の最大値 + 1。変更しない
-# - official_url は公式商品ページがあるときだけ入れる
+# - official_url は公式商品ページ、またはカード詳細ページがあるときだけ入れる
+# - シングルカードだけ、次のキーを足す。商品では書かない（空欄と同じ）
+#   card_name / collector_number / rarity / set_name
+# - シングルカードの name は card_name と同じカード名にする
+# - シングルカードの release_date は収録パックの発売日。定価がなければ list_price は null
 
 items:
   - id: 1
@@ -38,4 +42,22 @@ items:
     store: null
     memo: 公式商品ページ（ポケモンカードゲーム30周年特別サイト）で希望小売価格6,200円（税込）と発売日2026-09-16を確認。商品名は公式表記。
     official_url: https://www.30th.pokemon-card.com/product/mf
+    registered_on: 2026-11-15
+  - id: 3
+    category: ポケモンカードゲーム
+    name: メガダークライex
+    kind: シングルカード
+    card_name: メガダークライex
+    collector_number: "118/081"
+    rarity: MUR
+    set_name: 拡張パック「アビスアイ」
+    quantity: 1
+    condition: null
+    release_date: 2026-05-22
+    list_price: null
+    purchase_date: null
+    purchase_price: null
+    store: null
+    memo: 公式カード検索で収録番号118/081・レアリティMUR・拡張パック「アビスアイ」を確認。パックの発売日2026-05-22は https://www.pokemon-card.com/ex/m5/ で確認。シングルのため定価は空欄。
+    official_url: https://www.pokemon-card.com/card-search/details.php/card/50338
     registered_on: 2026-11-15
