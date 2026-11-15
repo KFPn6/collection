@@ -13,6 +13,8 @@
 #   card_name / collector_number / rarity / set_name
 # - シングルカードの name は card_name と同じカード名にする
 # - シングルカードの release_date は収録パックの発売日。定価がなければ list_price は null
+# - buyback_shop は売却予定先の店名。buyback_url はその店の当該商品の買取ページ
+# - 買取価格は変動するので入れない。入れるときは確認日とセットにする
 
 items:
   - id: 1
@@ -26,6 +28,8 @@ items:
     purchase_date: null
     purchase_price: null
     store: null
+    buyback_shop: null
+    buyback_url: null
     memo: 公式商品ページで希望小売価格5,500円（税込）と発売日2026-11-13を確認。商品名は公式表記。
     official_url: https://www.pokemon-card.com/products/mega/mg.html
     registered_on: 2026-11-15
@@ -40,6 +44,8 @@ items:
     purchase_date: null
     purchase_price: null
     store: null
+    buyback_shop: 買取一丁目
+    buyback_url: https://www.1-chome.com/wineDetail/10649/10685
     memo: 公式商品ページ（ポケモンカードゲーム30周年特別サイト）で希望小売価格6,200円（税込）と発売日2026-09-16を確認。商品名は公式表記。
     official_url: https://www.30th.pokemon-card.com/product/mf
     registered_on: 2026-11-15
@@ -58,6 +64,8 @@ items:
     purchase_date: null
     purchase_price: null
     store: null
+    buyback_shop: カードラッシュ
+    buyback_url: "https://cardrush.media/pokemon/buying_prices?name=メガダークライex&model_number=118/081&rarity=MUR"
     memo: 公式カード検索で収録番号118/081・レアリティMUR・拡張パック「アビスアイ」を確認。パックの発売日2026-05-22は https://www.pokemon-card.com/ex/m5/ で確認。シングルのため定価は空欄。
     official_url: https://www.pokemon-card.com/card-search/details.php/card/50338
     registered_on: 2026-11-15
