@@ -1,0 +1,71 @@
+# コレクション台帳（正本）
+#
+# アイテムを追加・更新するときは、このファイルの items に1件ずつ書く。
+# あわせて README.md の一覧表も同じ内容に更新する。
+#
+# 書き方:
+# - 日付は YYYY-MM-DD
+# - 金額は税込の整数（円）。通貨記号は付けない
+# - 不明な項目は null（空欄）。「未確認」とは書かない
+# - id は既存の最大値 + 1。変更しない
+# - official_url は公式商品ページ、またはカード詳細ページがあるときだけ入れる
+# - シングルカードだけ、次のキーを足す。商品では書かない（空欄と同じ）
+#   card_name / collector_number / rarity / set_name
+# - シングルカードの name は card_name と同じカード名にする
+# - シングルカードの release_date は収録パックの発売日。定価がなければ list_price は null
+# - buyback_shop は売却予定先の店名。buyback_url はその店の当該商品の買取ページ
+# - 買取価格は変動するので入れない。入れるときは確認日とセットにする
+
+items:
+  - id: 1
+    category: ポケモンカードゲーム
+    name: ポケモンカードゲーム MEGA 「スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー」
+    kind: デッキセット
+    quantity: 1
+    condition: null
+    release_date: 2026-11-13
+    list_price: 5500
+    purchase_date: null
+    purchase_price: null
+    store: null
+    buyback_shop: null
+    buyback_url: null
+    memo: 公式商品ページで希望小売価格5,500円（税込）と発売日2026-11-13を確認。商品名は公式表記。
+    official_url: https://www.pokemon-card.com/products/mega/mg.html
+    registered_on: 2026-11-15
+  - id: 2
+    category: ポケモンカードゲーム
+    name: ポケモンカードゲーム MEGA 「30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー」
+    kind: デッキセット
+    quantity: 1
+    condition: null
+    release_date: 2026-09-16
+    list_price: 6200
+    purchase_date: null
+    purchase_price: null
+    store: null
+    buyback_shop: 買取一丁目
+    buyback_url: https://www.1-chome.com/wineDetail/10649/10685
+    memo: 公式商品ページ（ポケモンカードゲーム30周年特別サイト）で希望小売価格6,200円（税込）と発売日2026-09-16を確認。商品名は公式表記。
+    official_url: https://www.30th.pokemon-card.com/product/mf
+    registered_on: 2026-11-15
+  - id: 3
+    category: ポケモンカードゲーム
+    name: メガダークライex
+    kind: シングルカード
+    card_name: メガダークライex
+    collector_number: "118/081"
+    rarity: MUR
+    set_name: 拡張パック「アビスアイ」
+    quantity: 1
+    condition: null
+    release_date: 2026-05-22
+    list_price: null
+    purchase_date: null
+    purchase_price: null
+    store: null
+    buyback_shop: カードラッシュ
+    buyback_url: "https://cardrush.media/pokemon/buying_prices?name=メガダークライex&model_number=118/081&rarity=MUR"
+    memo: 公式カード検索で収録番号118/081・レアリティMUR・拡張パック「アビスアイ」を確認。パックの発売日2026-05-22は https://www.pokemon-card.com/ex/m5/ で確認。シングルのため定価は空欄。
+    official_url: https://www.pokemon-card.com/card-search/details.php/card/50338
+    registered_on: 2026-11-15
